@@ -1,0 +1,137 @@
+
+/* ----------------------------------------------------------------
+
+	widgets.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Widgets
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for widgets. Thanks!
+-----------------------------------------------------------------*/
+
+
+.widget {
+	margin-bottom: 1.875rem;
+
+	p {
+		font-family: $body-font;
+		color: #585858;
+	}
+
+	.widget-title {
+		font-size: 0.875rem;
+		font-family: $body-font;
+		font-weight: 600;
+		margin-bottom: 0.85rem;
+	}
+
+	&.widget-contact {
+		margin-top: -0.6rem;
+	}
+
+	// Widget - Social
+	&.widget-social {
+		.social-icons {
+			li {
+				padding: 0 0.25rem;
+
+				&:last-child {
+					padding-right: 0;
+				}
+		
+				a {
+					background-color: $third-color;					
+					color: #717171;
+					display: inline-block;
+					line-height: 1.8125rem;
+					width: 2.8125rem;
+					height: 2.8125rem;
+					border-radius: 0.5rem;
+					font-size: 1.25rem;
+					padding: 0.5rem;		
+					vertical-align: middle;
+					text-align: center;
+					transition: all 0.3s ease-in-out;
+		
+					&:hover {
+						background-color: $theme-color;
+						color: $white;
+					}
+		
+					i {
+						vertical-align: top;
+						line-height: 1.8125rem;
+					}
+				}
+			}
+		}
+	}
+
+	&.widget-feedback {
+		.widget-content {
+			.input-group-append {
+				margin-left: -1rem;
+			}
+
+			input {
+				color: $body-color;
+				background-color: $third-color;
+			}
+		
+			button {
+				background-color: $third-color;
+				
+				i {
+					font-size: 1.25rem;
+					line-height: 1.5rem;
+				}
+			}
+		}
+	}
+
+	// Widget - Links
+	&.widget-links {
+		ul {
+			li {
+				a {
+					font-family: $body-font;
+					color: #7c7c7c;
+					font-weight: 400;
+					font-size: 1rem;
+					transition: all 0.3s ease-in-out;
+					text-decoration: none;
+
+					&:hover {
+						color: white;
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Payments
+	&.widget-payment {
+		.payments {
+			display: flex;
+
+			.payment-icon {
+				text-align: center;
+				margin-left: 0.4rem;
+				width: 5.5rem;
+				padding: 0.3rem 0;
+				border-radius: 0.5rem;
+				background-color: $third-color;
+				
+				img {
+					width: 3.5rem;
+				}
+			}
+		}
+	}
+}

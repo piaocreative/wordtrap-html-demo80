@@ -1,0 +1,44 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+
+#instagram {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.about-more {
+	position: relative;
+	top: -5rem;
+	// margin-bottom: -5rem;
+
+	@include media-breakpoint-down(lg) {
+		top: 1rem;
+	}
+}
+
+#map {
+	img {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 20rem;
+		height: 100%;
+
+		@include media-breakpoint-down(xl) {
+			position: relative;
+			width: 100%;
+			height: 20rem;
+		}
+	}
+}

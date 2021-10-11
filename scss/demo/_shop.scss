@@ -31,17 +31,13 @@
 	}
 
 	.category-title {
-		font-family: $heading-font;
 		font-size: 1rem;
 		font-weight: 700;
 	}
 
 	.category-btns {
 		a {
-			font-family: $body-font;
-			font-weight: 400;
 			font-size: 0.75rem;
-			text-decoration: none;
 			color: $third-color;
 		}
 	}
@@ -91,14 +87,11 @@
 	}
 
 	.product-info {
-		font-family: $body-font;
 		font-size: 0.75rem;
-		font-weight: 400;
 		color: #a0a0a0;
 	}
 
 	.product-title {
-		font-family: $heading-font;
 		font-size: 1rem;
 		font-weight: 700;
 	}
@@ -135,7 +128,6 @@
 		color: $white;
 		background-color: $theme-color;
 		text-align: center;
-		text-decoration: none;
 
 		&:hover {
 			background-color: $theme-color;
@@ -172,7 +164,6 @@
 		font-family: $body-font;
 		font-size: .75rem;
 		line-height: 1;
-		font-weight: 400;
 		padding: .3rem .75rem;
 		position: absolute;
 		top: 2rem;

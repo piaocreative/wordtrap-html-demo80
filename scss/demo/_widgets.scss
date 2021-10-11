@@ -20,7 +20,6 @@
 	margin-bottom: 1.875rem;
 
 	p {
-		font-family: $body-font;
 		color: #585858;
 	}
 
@@ -72,40 +71,13 @@
 			}
 		}
 	}
-
-	&.widget-feedback {
-		.widget-content {
-			.input-group-append {
-				margin-left: -1rem;
-			}
-
-			input {
-				color: $body-color;
-				background-color: $third-color;
-			}
-		
-			button {
-				background-color: $third-color;
-				
-				i {
-					font-size: 1.25rem;
-					line-height: 1.5rem;
-				}
-			}
-		}
-	}
-
 	// Widget - Links
 	&.widget-links {
 		ul {
 			li {
 				a {
-					font-family: $body-font;
 					color: #7c7c7c;
-					font-weight: 400;
-					font-size: 1rem;
 					transition: all 0.3s ease-in-out;
-					text-decoration: none;
 
 					&:hover {
 						color: white;

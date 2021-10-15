@@ -30,10 +30,6 @@
 		margin-bottom: 0.85rem;
 	}
 
-	&.widget-contact {
-		margin-top: -0.6rem;
-	}
-
 	// Widget - Social
 	&.widget-social {
 		.social-icons {
@@ -87,6 +83,23 @@
 		}
 	}
 
+	&.widget-custom-html {
+		ul {
+			li {
+				a {
+					color: $white;
+					font-size: 0.875rem;
+				}
+
+				i {
+					font-size: 1.25rem;
+					color: $success;
+					margin-right: 0.875rem;
+				}
+			}
+		}
+	}
+
 	// Widget - Payments
 	&.widget-payment {
 		.payments {
@@ -104,6 +117,12 @@
 					width: 3.5rem;
 				}
 			}
+		}
+	}
+
+	&.widget-subscribe {
+		.input-group {
+			background-color: #2e2e2e;
 		}
 	}
 }

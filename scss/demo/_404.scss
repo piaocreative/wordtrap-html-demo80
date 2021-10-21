@@ -5,9 +5,5 @@
 -----------------------------------------------------------------*/
 .error-404 {
     position: relative; 
-    padding: 7rem 0;
-
-    @include media-breakpoint-down(lg) {
-        padding: 0;
-    }
+    padding: 10.5rem 0;
 }

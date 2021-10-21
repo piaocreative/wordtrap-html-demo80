@@ -20,8 +20,6 @@
 .category {
 	.category-image {
 		img {
-			width: 100%;
-			height: auto;
 			border-radius: 0.5rem;
 		}
 	}
@@ -38,7 +36,7 @@
 	.category-btns {
 		a {
 			font-size: 0.75rem;
-			color: $third-color;
+			color: $secondary;
 		}
 	}
 
@@ -49,18 +47,28 @@
 
 /* Product
 -----------------------------------------------------------------*/
-.product {
-	margin-bottom: 1.875rem;
-	position: relative;
+.product {	
 	border-radius: 0.5rem;
-	padding: 0.5rem;
 	background-color: $white;
+	position: relative;
+	margin-bottom: 1.875rem;
+	
+	&.product-flat {
+		@include media-breakpoint-up(xxl) {
+			display: flex;
+			align-items: center;
+
+			.product-image,
+			.product-details {
+				width: 50%;
+			}
+		}		
+	}
 
 	.product-image {
 		position: relative;
 
 		img {
-			width: 100%;
 			border-radius: 0.5rem;
 			min-height: 14rem;
 		}
@@ -72,14 +80,14 @@
 	}
 
 	.product-price {
+		color: $secondary;
 		font-size: 1rem;
 		font-family: $heading-font;
-		font-weight: 700;
-		color: $third-color;
+		font-weight: 700;		
 
 		del {
-			font-family: $body-font;
 			color: #a0a0a0;
+			font-family: $body-font;			
 			font-size: 0.75rem;
 			font-weight: 400;
 			margin-left: 0.5rem;
@@ -153,7 +161,7 @@
 		@include transition(all 0.3s ease-in-out);				
 
 		&:hover {
-			color: $theme-color;
+			background-color: $theme-color;
 		}
 	}
 
@@ -166,7 +174,7 @@
 		line-height: 1;
 		padding: .3rem .75rem;
 		position: absolute;
-		top: 2rem;
+		top: 1.25rem;
 		left: 1rem;
 		z-index: 2;
 		text-transform: uppercase;
@@ -176,7 +184,7 @@
 	}
 
 	.onbest {
-		background-color: $success;
+		background-color: $secondary;
 	}
 
 	.onsale {
@@ -188,7 +196,7 @@
 	}
 
 	.ontop {
-		background-color: $success;
+		background-color: $secondary;
 	}
 }
 

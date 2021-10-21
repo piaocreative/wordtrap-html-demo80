@@ -21,29 +21,20 @@
 
 	// Transparent header
 	&.transparent-header {
-		background-color: #857db8;
+		background-color: $theme-color;
 		z-index: 199;
 
 		@include media-breakpoint-up(lg) {
 			background-color: transparent;
-
-			& + #content,
-			& + #error-404 {
-				position: relative;
-				top: -$header-height;
-				margin-bottom: -$header-height;
-			}
 		}			
+
+		& + #content,
+		& + #error-404 {
+			position: relative;
+			top: -$header-height;
+			margin-bottom: -$header-height;
+		}
 	}
-}
-
-/* ----------------------------------------------------------------
-	Sticky Header
------------------------------------------------------------------*/
-
-#header-wrap {
-	padding-left: 2.8125rem;
-	padding-right: 2.8125rem;
 }
 
 
@@ -52,33 +43,10 @@
 -----------------------------------------------------------------*/
 
 .navbar-brand {
+	margin-right: 2.375rem;
+
 	img {
-		width: 6.5rem;
-		height: auto;
-	}
-}
-
-
-/* ----------------------------------------------------------------
-	Primary Menu
------------------------------------------------------------------*/
-
-#primary-menu {
-	.nav-link {
-		color: $primary-menu-font-color;
-		font-family: $body-font;
-		font-size: $primary-menu-font-size;
-		font-weight: $primary-menu-font-weight;		
-		letter-spacing: $primary-menu-font-spacing;
-		text-transform: $primary-menu-font-tt;
-	}
-
-	.nav-item {
-		&:hover {
-			a {
-				color: $theme-color !important;
-			}
-		}
+		max-width: 6.5rem;
 	}
 }
 
@@ -87,25 +55,26 @@
 	Mega Menu
 -----------------------------------------------------------------*/
 
-// Please ignore mega menu now 
+
 
 
 /* ----------------------------------------------------------------
 	Top Buttons
 -----------------------------------------------------------------*/
 
-
 #top-btns {
 	.nav-link {
 		color: #ffffff;		
 		font-size: 1.25rem;	
-		line-height: 1;
-		padding: 0.7rem;
-		font-family: $body-font;
+		line-height: 1;		
 		font-weight: 600;
+		padding-left: 1.1875rem;
+		padding-right: 1.1875rem;
 
 		&:hover {
-			color: $theme-color;
+			i {
+				color: $nav-link-hover-color;
+			}
 		}
 
 		[data-cart-items] {
@@ -120,9 +89,9 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				width: 18px;
-				height: 18px;
-				font-size: 11px;
+				width: 1.125rem;
+				height: 1.125rem;
+				font-size: 0.6875rem;
 				font-weight: 500;
 				border-radius: 50%;
 				border: 1px solid #fff;
@@ -139,16 +108,18 @@
 -----------------------------------------------------------------*/
 
 #top-links {
-	margin-left: 2rem;
-
 	a.nav-link {
 		display: block;
-		font-size: 0.75rem;
-		font-family: $body-font;	
-		color: $topbar-color;
+		font-size: 0.75rem;	
+		color: #adacac;
+
+		@include media-breakpoint-up(lg) {
+			padding-right: 0.75rem;
+			padding-left: 0.75rem;
+		}
 
 		&:hover {
-			color: $theme-color;
+			color: $nav-link-hover-color;
 		}
 	}
 
@@ -161,11 +132,11 @@
 	.dropdown-menu {
 		background: $white;
 		border: 0;
-		top: $topbar-line-height;
+		top: 2.75rem;
 		left: 0;
 		width: 100%;		
 		margin: 0;
-		border-top: 3px solid $theme-color;
+		border-top: 3px solid $secondary;
 
 		@include border-radius(0);
 
@@ -298,7 +269,7 @@
 		font-family: $heading-font;
 		font-weight: 700;
 		color: #282828;
-		color: $secondary;
+		color: #282828;
 
 		del {
 			font-family: $body-font;
